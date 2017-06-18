@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.cnitsec</groupId>
-	<artifactId>mirana-report</artifactId>
+	<artifactId>mirana-ee</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mirana-report</name>
+	<name>mirana-ee</name>
 	<url>http://blog.csdn.net/yiifaa</url>
 
 
@@ -19,13 +19,12 @@
 	</properties>
 
 	<dependencies>
-	
+		<!-- 第三方架包工具类 -->
 		<dependency>
-		    <groupId>org.eclipse.birt.runtime</groupId>
-		    <artifactId>org.eclipse.birt.runtime</artifactId>
-		    <version>4.6.0-20160607</version>
-		</dependency>
-		 
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>22.0</version>
+		</dependency>		 
 		<!-- 数据存储相关 -->
 		<dependency>
             <groupId>${jdbc.groupId}</groupId>
