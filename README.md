@@ -11,3 +11,5 @@ maven-archetype-webapp 1.0一直都是只支持Servlet 2.3、JAVA 1.5，导致�
 3. 支持Kotlin 1.1.2；
 4. 支持Guava 22.0
 5. 支持数据库Profile；
+6. 保留编译时方法参数名称；
+
