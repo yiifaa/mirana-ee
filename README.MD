@@ -1,3 +1,6 @@
-mirana-ee
-----------
-基于Java EE的MAVEN项目，支持Servlet 3.1
+spring-mvc
+------------
+增加Spring MVC支持
+
+## 1. 特性
+1. 增加jQuery支持
