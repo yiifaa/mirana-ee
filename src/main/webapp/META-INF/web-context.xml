@@ -10,7 +10,7 @@
 	
 	<!-- 此配置尽可能放在最后 -->
 	<!-- 仅扫描WEB控制器 -->
-	<context:component-scan base-package="com.cnitsec" use-default-filters="false">
+	<context:component-scan base-package="com.mirana" use-default-filters="false">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>	
 		<context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.RestController"/>	
 	</context:component-scan>
