@@ -35,6 +35,7 @@
 			<artifactId>guava</artifactId>
 			<version>22.0</version>
 		</dependency>		 
+
 		<!-- 数据存储相关 -->
 		<dependency>
             <groupId>${jdbc.groupId}</groupId>
