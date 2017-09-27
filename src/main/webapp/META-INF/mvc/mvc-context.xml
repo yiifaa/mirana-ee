@@ -10,5 +10,13 @@
 	<!-- WEB核心配置 -->
 	<mvc:annotation-driven>
 	</mvc:annotation-driven>
-
+	
+	<bean class="com.mirana.domain.Account" scope="session"/>
+	
+	<mvc:interceptors>
+		<mvc:interceptor >
+			<mvc:mapping path="/**"/>
+			<bean class="com.mirana.interceptor.SessionAttributeInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>
