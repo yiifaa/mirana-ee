@@ -9,6 +9,13 @@
 	
 	<!-- WEB核心配置 -->
 	<mvc:annotation-driven>
+		<mvc:message-converters>
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<constructor-arg name="objectMapper">
+					<bean class="com.mirana.MyObjectMapper"/>
+				</constructor-arg>
+			</bean>
+		</mvc:message-converters>
 	</mvc:annotation-driven>
 	
 	<bean class="com.mirana.domain.Account" scope="session"/>

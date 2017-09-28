@@ -1,5 +1,7 @@
 package com.mirana.domain;
 
+import java.util.Date;
+
 /**
  * 
  * 
@@ -12,6 +14,8 @@ public class Account {
 	private String username;
 	
 	private String password;
+	
+	private Date version;
 
 	/**
 	 * @return the username
@@ -39,6 +43,20 @@ public class Account {
 	 */
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	/**
+	 * @return the version
+	 */
+	public Date getVersion() {
+		return version;
+	}
+
+	/**
+	 * @param version the version to set
+	 */
+	public void setVersion(Date version) {
+		this.version = version;
 	}
 	
 }
