@@ -8,7 +8,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mirana-ee</name>
 	<url>http://blog.csdn.net/yiifaa</url>
-
+    
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.2.RELEASE</version>
+    </parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,12 +24,18 @@
 	</properties>
 
 	<dependencies>
+	    <!-- web -->
+	    <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 		<!-- 第三方架包工具类 -->
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>22.0</version>
 		</dependency>		 
+
 		<!-- 数据存储相关 -->
 		<dependency>
             <groupId>${jdbc.groupId}</groupId>
@@ -39,11 +50,25 @@
 			<version>${kotlin.version}</version>
 		</dependency>
 		
+		<dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>httpclient</artifactId>
+		</dependency>
+		<dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>httpmime</artifactId>
+		  <version>4.5.5</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>fluent-hc</artifactId>
+		  <version>4.5.5</version>
+		</dependency>
+		
 		<!-- Junit支持 -->
 		<dependency>
 		    <groupId>junit</groupId>
 		    <artifactId>junit</artifactId>
-		    <version>4.12</version>
 		    <scope>test</scope>
 		</dependency>
 		<dependency>
